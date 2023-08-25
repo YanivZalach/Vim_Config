@@ -18,7 +18,6 @@
 		Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 		Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 		Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-		Plug 'https://github.com/preservim/tagbar' " Tag bar for code navigation
 		Plug 'davidhalter/jedi-vim' " auto complete for python
 		Plug 'neoclide/coc.nvim', {'branch': 'release'} "for auto complete 
 

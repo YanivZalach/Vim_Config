@@ -38,14 +38,14 @@ Before using this Vim configuration, make sure you have the following installed 
    
 3. Copy the config file, by copy and paste the following command into the terminal and press 'enter':
 
-  for Vim:
+  For Vim:
   ```bash
   git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
   mv ~/Vim_Linux_Config/* ~/
   rm -rf ~/Vim_Linux_Config
   ```
 
-  for NeoVim:
+  For NeoVim:
   ```bash
   git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
   mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
@@ -54,11 +54,11 @@ Before using this Vim configuration, make sure you have the following installed 
    
    To install the plugins, follow these steps:
    
-   Launch Vim/Nvim by typing the following in the terminal (use vim for Vim or nvim for Neovim), all in lowercase:
+   Launch Vim/NeoVim by typing the following in the terminal (use vim for Vim or nvim for NeoVim), all in lowercase:
    ```bash
    vim
    ```
-   Once inside Vim/Nvim, press **:** to enter command mode.
+   Once inside Vim/NeoVim, press **:** to enter command mode.
 
    Write the following command to trigger plugin installation:
    ```
@@ -70,7 +70,7 @@ Before using this Vim configuration, make sure you have the following installed 
    ```
    :q
    ```
-   With these steps, you'll have successfully installed the plugins for your Vim/Nvim configuration.
+   With these steps, you'll have successfully installed the plugins for your Vim/NeoVim configuration.
    
 
 ## Usage, Features, and Special Key Bindings 🚀
@@ -89,19 +89,17 @@ Basic Auto-Completion using coc.nvim 🔌
 NERD Tree Integration 🌲
   * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
   
-vim-airline ✈️
+Vim-airline ✈️
   * a sleek and customizable status bar for Vim, located at the bottom of your editor.
 
-vim-devicons 🔍
+Vim-devicons 🔍
   * Developer-friendly icons to different file types and directories. 
 
-vim-terminal 💻
+Vim-terminal 💻
   * A terminal emulator directly within Vim. This feature empowers you to run commands, compile code, and perform other terminal-related tasks without leaving your Vim environment.
 
-Tagbar 🏷️
-  * code navigation sidebar that displays the structure of your code files.
-    
-jedi-vim 🐍
+
+Jedi-vim 🐍
   * enhances your Python coding experience by providing auto-completion, code analysis, and documentation pop-ups.
 
 
@@ -197,6 +195,6 @@ The installation is not working:
   
 ## Acknowledgments 🙏
 
-A special thanks to the Vim/Neovim community for their continuous support.
+A special thanks to the Vim/NeoVim community for their continuous support.
 
 ### Happy Editing! 🪶💻
