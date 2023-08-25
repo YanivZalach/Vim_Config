@@ -34,10 +34,10 @@
 " Disable compatibility with vi which can cause unexpected issues.
 	set nocompatible
 
-"Disable auto commenting in a new line
+" Disable auto commenting in a new line
 	autocmd Filetype * setlocal formatoptions-=c formatoptions-=r  formatoptions-=o
 
-"setting the character encoding of Vim to UTF-8
+" Setting the character encoding of Vim to UTF-8
 	set encoding=UTF-8
 
 " Enable type file detection. Vim will be able to try to detect the type of file is use.
@@ -46,7 +46,7 @@
 " Enable spell check
 	set spell
 
-"smart tab
+" Smart tab
 	set smarttab
 
 " Enable plugins and load plugin for the detected file type.
@@ -61,10 +61,10 @@
 " Add numbers to the file.
 	set number relativenumber
 
-"mouse functionality
+" Mouse functionality
 	set mouse=a
 
-"color scheme
+" Color scheme
 	color slate 
 
 " Highlight cursor line underneath the cursor horizontally.
@@ -105,7 +105,7 @@
 " Set the commands to save in history default number is 20.
 	set history=1000
 
-"setting the split window to open as i like (like in a WM - qtile)
+" Setting the split window to open as i like (like in a WM - qtile)
 	set splitbelow splitright
 
 " Enable auto completion menu after pressing TAB.
@@ -123,7 +123,7 @@
     	set undoreload=10000
 	endif
 
-"nerd tree settings
+" Nerd tree settings
 	let g:NERDTreeDirArrowExpandable="+"
 	let g:NERDTreeDirArrowCollapsible="~"
 	let g:NERDTreeShowHidden=1
@@ -142,7 +142,7 @@
     	" Set the color scheme.
     		color slate
 
-		"font
+		" Font
 			set guifont=Consolas\ 14
 
 		" Hide the toolbar.
@@ -150,6 +150,7 @@
 
     	" Hide the right-side scroll bar.
     		set guioptions-=r
+
 		" Start NERD Tree and put the cursor back in the other window.
 			autocmd VimEnter * NERDTree | wincmd p
 
@@ -159,7 +160,7 @@
 "------------------KEY_BINDINGS------------------
 
 
-" spell-check on\off
+" Spell-check on\off
 	map <C-z> :setlocal spell! spelllang=en_us<CR>
 
 
@@ -176,12 +177,12 @@
 
 
 " Opening a file explore - stay as only window unlike NERD tree
-	map <leader>e :Lexplore<CR>
+	map <leader>e :Lex<CR>
 
 
-" opening a terminal window
+" Opening a terminal window
 	map <c-t> :ter<CR>
-" closing the terminal window
+" Closing the terminal window
 	tnoremap <c-t> exit<CR>
 " CTRL+I to make the terminal scrollable and I to input mode
 	tnoremap <c-i> <c-w><s-n> 
@@ -199,7 +200,7 @@
 	nnoremap <c-l> <c-w>l
 
 
-" resize split windows using arrow keys by pressing:
+" Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
 	noremap <c-up> <c-w>+
 	noremap <c-down> <c-w>-
@@ -215,22 +216,22 @@
 	nnoremap <leader>c :tabnew<space>
 
 
-" saving a file using CTRL+S
+" Saving a file using CTRL+S
 	map <C-S> :w<CR>
 
 
-" quitting and saving a file using CTRL+S
+" Quitting and saving a file using CTRL+S
 	map <C-q> :wq<CR>
 
 
-" opening/closing NERD tree
+" Opening/closing NERD tree
 	map <leader>n :NERDTreeToggle<CR>
 
 
-" for copy and past
+" For copy and past
 	map <C-S-V> "+P
 	vnoremap <C-C> "*y :let @+=@*<CR>
-" if not in Linux replace the keybinding in line 108: vnoremap <C-C> "+y
+" If not in Linux replace the keybinding in line 108: vnoremap <C-C> "+y
 
 
 "------------------END_KEY------------------
