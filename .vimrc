@@ -142,7 +142,13 @@
     		color slate
 
 		" Font
-			set guifont=Consolas\ 14
+			if has("gui_macvim")
+    			set guifont=Menlo\ Regular:h14
+			elseif has("gui_win32")
+				set guifont="Consolas 11"
+			else
+				set guifont=Consolas\ 14
+			endif
 
 		" Hide the toolbar.
 			set guioptions-=T
