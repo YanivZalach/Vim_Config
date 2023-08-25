@@ -163,7 +163,7 @@ The installation is not working:
   If Git is installed, you will see the installed version. If not, you need to install it using your package manager.
   Then retry the Installation.
   
-* Check if the `~/.config/nvim` , `~/Vim_Linux_Config` or `~/.vimrc` file already exists.
+* Check if the `~/.config/nvim` , `~/Vim_Linux_Config` or `~/.vimrc` already exists.
   Open the terminal and run the following command to check if they exists:
 
   - To check if the `~/.config/nvim` directory exists, run:
