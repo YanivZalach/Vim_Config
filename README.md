@@ -21,8 +21,8 @@ Who can use it? Anyone can use it!
 Before using this Vim configuration, make sure you have the following installed on your system:
 
 **One of:**
-- Vim 📜
-- NeoVim 📜
+- [Vim](https://www.vim.org/) 📜
+- [NeoVim](https://neovim.io) 📜
 
 **And:**
 - [Node.js](https://github.com/nodejs/node) 🟢 (Auto-Completion using nvim.coc)
