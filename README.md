@@ -1,13 +1,14 @@
-# My Awesome Vim Configuration For Linux
+# My Awesome Vim / NeoVim Configuration
 
 <p align="center">
   <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1200px-Vimlogo.svg.png" alt="Vim Logo">
+   <img width="600" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Neovim-logo.svg/1200px-Neovim-logo.svg.png" alt="Neovim Logo">
 </p>
 
-**Vim** is a powerful and highly configurable text editor designed to make text manipulation and coding a breeze. It's known for its unique modal editing system, where different modes offer distinct functionalities like insertion, navigation, and text manipulation. This design philosophy enables lightning-fast editing once you're familiar with the concepts.
+[Vim](https://www.vim.org/) / [NeoVim](https://neovim.io) is a powerful and highly configurable text editor designed to make text manipulation and coding a breeze. It's known for its unique modal editing system, where different modes offer distinct functionalities like insertion, navigation, and text manipulation. This design philosophy enables lightning-fast editing once you're familiar with the concepts.
 
 
-What do we have here? My Vim configuration file, specifically for the Linux operating system! 
+What do we have here? My Vim configuration file! 
 
 Who can use it? Anyone can use it!
 
