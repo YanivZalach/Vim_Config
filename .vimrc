@@ -230,7 +230,7 @@
 " For copy and past
 	map <C-S-V> "+P
 	vnoremap <C-C> "*y :let @+=@*<CR>
-" If not in Linux replace the keybinding in line 108: vnoremap <C-C> "+y
+" If not in Linux replace the keybinding in above line with: vnoremap <C-C> "+y
 
 
 "------------------END_KEY------------------
