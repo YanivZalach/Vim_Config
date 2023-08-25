@@ -99,8 +99,8 @@ Vim-terminal 💻
   * A terminal emulator directly within Vim. This feature empowers you to run commands, compile code, and perform other terminal-related tasks without leaving your Vim environment.
 
 
-Jedi-vim 🐍
-  * enhances your Python coding experience by providing auto-completion, code analysis, and documentation pop-ups.
+Jedi-vim *(commented by default)* 🐍
+  * enhances your Python3 coding experience by providing auto-completion, code analysis, and documentation pop-ups.
 
 
 ### Native Vim Key Bindings 🎮
