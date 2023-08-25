@@ -41,14 +41,14 @@ Before using this Vim configuration, make sure you have the following installed 
     
       For Vim:
       ```bash
-      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
-      mv ~/Vim_Linux_Config/* ~/
-      rm -rf ~/Vim_Linux_Config
+      git clone https://github.com/YanivZalach/Vim_Config.git ~/Vim_Config
+      mv ~/Vim_Config/* ~/
+      rm -rf ~/Vim_Config
       ```
     
       For NeoVim:
       ```bash
-      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
+      git clone https://github.com/YanivZalach/Vim_Config.git ~/.config/nvim
       mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
       ```
       ### Windows:
@@ -56,22 +56,21 @@ Before using this Vim configuration, make sure you have the following installed 
     
       For Vim:
       ```pwsh
-      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
-      mv ~/Vim_Linux_Config/* ~/
-      rm -rf ~/Vim_Linux_Config
+      git clone https://github.com/YanivZalach/Vim_Config.git $HOME\Vim_Config
+      mv $HOME\Vim_Config* $HOME
       ```
     
       For NeoVim:
       ```pwsh
-      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
-      mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
+      git clone https://github.com/YanivZalach/Vim_Config.git  $HOME\AppData\Local\nvim
+      mv $HOME\AppData\Local\nvim/.vimrc $HOME\AppData\Local\nvim/init.vim
       ```
 3. Install the Plugins:
    
    To install the plugins, follow these steps:
    
-   Launch Vim/NeoVim by typing the following in the terminal (use vim for Vim or nvim for NeoVim), all in lowercase:
-   ```bash
+   Launch Vim/NeoVim by typing the following in the terminal/PowerShell (use vim for Vim or nvim for NeoVim), all in lowercase:
+   ```
    vim
    ```
    Once inside Vim/NeoVim, press **:** to enter command mode.
@@ -179,7 +178,11 @@ The installation is not working:
   If Git is installed, you will see the installed version. If not, you need to install it using your package manager.
   Then retry the Installation.
   
-* Check if the `~/.config/nvim` , `~/Vim_Linux_Config` or `~/.vimrc` already exists.
+* Check if a file/directory already exists
+  
+  **Linux & MacOS**
+  
+  Check if the `~/.config/nvim` , `~/Vim_Config` or `~/.vimrc` already exists.
   Open the terminal and run the following command to check if they exists:
 
   - To check if the `~/.config/nvim` directory exists, run:
@@ -190,21 +193,51 @@ The installation is not working:
       ```bash
       mv ~/.config/nvim ~/.config/nvim_backup
       ```
-  - To check if the `~/Vim_Linux_Config` directory exists, run:
+  - To check if the `~/Vim_Config` directory exists, run:
       ```bash
-      ls ~/Vim_Linux_Config
+      ls ~/Vim_Config
       ```
       Is found, run:
       ```bash
-      mv ~/Vim_Linux_Config ~/Vim_Linux_Config_backup
+      mv ~/Vim_Config ~/Vim_Config_backup
       ```
   - To check if the `~/.vimrc` file exists, run:
       ```bash
       cat ~/.vimrc
       ```
       Is found, run:
-      ```
+      ```bash
       mv ~/.vimrc ~/.vimrc_backup
+      ```
+
+  **Windows**
+  
+  Check if the `$HOME\AppData\Local\nvim` , `$HOME\Vim_Config` or `$HOME\.vimrc` already exists.
+  Open PowerShell and run the following command to check if they exists:
+
+  - To check if the `$HOME\AppData\Local\nvim` directory exists, run:
+      ```pwsh
+      dir $HOME\AppData\Local\nvim
+      ```
+      Is found, run:
+      ```pwsh
+      mv $HOME\AppData\Local\nvim $HOME\AppData\Local\nvim_backup
+      ```
+  - To check if the `$HOME\Vim_Config` directory exists, run:
+      ```pwsh
+      dir $HOME\Vim_Config
+      ```
+      Is found, run:
+      ```pwsh
+      mv $HOME\Vim_Config $HOME\Vim_Config_backup
+      ```
+  - To check if the `$HOME\.vimrc` file exists, run:
+      ```pwsh
+      cat $HOME\.vimrc
+      ```
+      Is found, run:
+      ```pwsh
+      mv $HOME\.vimrc $HOME\.vimrc_backup
       ```
   This will rename the existing directory/file as _backup.
   Retry the Installation.
