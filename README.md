@@ -63,7 +63,7 @@ Before using this Vim configuration, make sure you have the following installed 
       For NeoVim:
       ```pwsh
       git clone https://github.com/YanivZalach/Vim_Config.git  $HOME\AppData\Local\nvim
-      mv $HOME\AppData\Local\nvim/.vimrc $HOME\AppData\Local\nvim/init.vim
+      mv $HOME\AppData\Local\nvim\.vimrc $HOME\AppData\Local\nvim\init.vim
       ```
 3. Install the Plugins:
    
