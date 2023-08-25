@@ -7,7 +7,7 @@
 **Vim** is a powerful and highly configurable text editor designed to make text manipulation and coding a breeze. It's known for its unique modal editing system, where different modes offer distinct functionalities like insertion, navigation, and text manipulation. This design philosophy enables lightning-fast editing once you're familiar with the concepts.
 
 
-What do we have here? My Vim configuration file specifically for the Linux operating system! 
+What do we have here? My Vim configuration file, specifically for the Linux operating system! 
 
 Who can use it? Anyone can use it!
 
@@ -20,12 +20,13 @@ Who can use it? Anyone can use it!
 Before using this Vim configuration, make sure you have the following installed on your system:
 
 **One of:**
-- Vim
-- NeoVim
- 
+- Vim 📜
+- NeoVim 📜
+
 **And:**
-- Node.js (Auto-Completion using nvim.coc)
-- Vim-Plug (plugin manager)
+- [Node.js](https://github.com/nodejs/node) 🟢 (Auto-Completion using nvim.coc)
+- [Vim-Plug](https://github.com/junegunn/vim-plug) ⚡️ (plugin manager)
+
 
 
 ## Installation 📦
@@ -33,11 +34,14 @@ Before using this Vim configuration, make sure you have the following installed 
 1. Install the programs listed above using your package manager or download them from their respective websites.
 
 2. Open a terminal emulator
+   
 3. Copy the config file, by copy and paste the following command into the terminal and press 'enter':
 
   for Vim:
   ```bash
-  git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.
+  git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
+  mv ~/Vim_Linux_Config/* ~/
+  rm -rf ~/Vim_Linux_Config
   ```
 
   for NeoVim:
@@ -45,3 +49,140 @@ Before using this Vim configuration, make sure you have the following installed 
   git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
   mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
   ```
+4. Install the Plugins:
+   
+   To install the plugins, follow these steps:
+   
+   Launch Vim/Nvim by typing the following in the terminal (use vim for Vim or nvim for Neovim), all in lowercase:
+   ```bash
+   vim
+   ```
+   Once inside Vim/Nvim, press **:** to enter command mode.
+
+   Write the following command to trigger plugin installation:
+   ```
+   PlugInstall
+   ```
+   After running this command, a window will pop up showing the progress of plugin downloads. Wait for the downloads to complete.
+
+   Once the download is finished, you can exit the window by typing:
+   ```
+   :q
+   ```
+   With these steps, you'll have successfully installed the plugins for your Vim/Nvim configuration.
+   
+
+## Usage, Features, and Special Key Bindings 🚀
+### Welcome to Your Enhanced Vim Experience!
+
+Smart Tab and Indentation Settings 💡
+  * Experience seamless and intelligent code indentation for a consistent coding journey.
+
+Beautiful Color Scheme 🌈
+  * A soothing color scheme that's easy on your eyes is set as default, enhancing your focus and readability.
+  
+Basic Auto-Completion using coc.nvim 🔌
+  
+  * Experience basic auto-completion courtesy of coc.nvim, which can be extended for future enhancements.
+    
+NERD Tree Integration 🪶
+  * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
+  
+Additional Useful Plugins 🛠️
+  * Boost your productivity with handy plugins such as vim-airline and tagbar, enhancing your workflow and information display.
+
+### Native Vim Key Bindings 🎮
+
+Utilize these native Vim key bindings to navigate and control the text editor efficiently:
+
+- `:w`: Save changes to the file.
+- `:q`: Quit Vim.
+- `:q!`: Quit Vim without saving changes.
+- `:wq` or `:x`: Save changes and quit Vim.
+- `j`, `k`, `h`, `l`: Navigate through the file.
+- `zz`: Center the current line on the screen.
+- `i`, `a`, `s`: Enter insert mode.
+- `shift+v`: Enter visual line mode.
+- `z=`: Get spelling check suggestions for a word.
+- `dd`: Delete the current line.
+- `yy`: Yank (copy) the current line.
+- `p`: Paste the content you've yanked or deleted.
+- `u`: Undo the last action.
+- `<Ctrl> + r`: Redo an undone action.
+- `/pattern`: Search for a specific pattern in the text.
+- `n`: Move to the next occurrence of the search pattern.
+- `N`: Move to the previous occurrence of the search pattern.
+
+Remember, Vim's unique modal nature means that you often need to switch to Normal mode (by pressing `Esc`) before executing the above commands.
+
+### Enhanced Key Bindings for Speed and Fun! ⚡️
+
+Take your editing experience to the next level with these added key bindings:
+
+- `<Ctrl> + c`: Copy text to the main clipboard in normal mode.
+- `<Ctrl> + <Shift> + v`: Paste text from the main clipboard.
+- `jj`: Quickly exit insert mode.
+- `Q`: Format a paragraph into lines.
+- `<Ctrl> + z`: Toggle spell check.
+- `<Space> + e`: Open a file explorer.
+- `<Ctrl> + t`: Toggle a terminal window.
+- `<Ctrl> + i`: Make the terminal scrollable or switch to input mode.
+- `<Space> + y`: Split window vertically.
+- `<Space> + x`: Split window horizontally.
+- `<Ctrl> + j`, `<Ctrl> + k`, `<Ctrl> + h`, `<Ctrl> + l`: Navigate between splits.
+- `<Ctrl> + Left Arrow`, `<Ctrl> + Right Arrow`, `<Ctrl> + Up Arrow`, `<Ctrl> + Down Arrow`: Resize splits.
+- `<Space> + t`: Switch between tabs.
+- `<Space> + c`: Create a new tab.
+- `<Ctrl> + s`: Save the current file.
+- `<Ctrl> + q`: Save and quit.
+- `<Ctrl> + n`: Toggle NERD Tree.
+
+
+
+## Troubleshooting 🔧
+
+The installation is not working:
+
+* Make sure you have Git installed on your computer.
+  Open the terminal and run the following command:
+  ```bash
+  git --version
+  ```
+  If Git is installed, you will see the installed version. If not, you need to install it using your package manager.
+  Then retry the Installation.
+  
+* Check if the `~/.config/nvim directory` , `~/Vim_Linux_Config` or `~/.vimrc` file already exists.
+  Open the terminal and run the following command to check if they exists:
+
+  - To check if the `~/.config/nvim` directory exists, run:
+      ```bash
+      ls ~/.config/nvim
+      ```
+      Is found, run:
+      ```bash
+      mv ~/.config/nvim ~/.config/nvim_backup
+      ```
+  - To check if the `~/Vim_Linux_Config` directory exists, run:
+      ```bash
+      ls ~/Vim_Linux_Config
+      ```
+      Is found, run:
+      ```bash
+      mv ~/Vim_Linux_Config ~/Vim_Linux_Config_backup
+      ```
+  - To check if the `~/.vimrc` file exists, run:
+      ```bash
+      cat ~/.vimrc
+      ```
+      Is found, run:
+      ```
+      mv ~/.vimrc ~/.vimrc_backup
+      ```
+  This will rename the existing directory/file as _backup.
+  Retry the Installation.
+  
+## Acknowledgments 🙏
+
+A special thanks to the Vim/Neovim community for their continuous support.
+
+### Happy Editing! 🪶💻🐍
