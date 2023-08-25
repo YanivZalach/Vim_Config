@@ -84,13 +84,26 @@ Beautiful Color Scheme 🌈
   
 Basic Auto-Completion using coc.nvim 🔌
   
-  * Experience basic auto-completion courtesy of coc.nvim, which can be extended for future enhancements.
+  * Auto-completion courtesy of coc.nvim, which can be extended for future enhancements.
     
-NERD Tree Integration 🪶
+NERD Tree Integration 🌲
   * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
   
-Additional Useful Plugins 🛠️
-  * Boost your productivity with handy plugins such as vim-airline and tagbar, enhancing your workflow and information display.
+vim-airline ✈️
+  * a sleek and customizable status bar for Vim, located at the bottom of your editor.
+
+vim-devicons 🔍
+  * Developer-friendly icons to different file types and directories. 
+
+vim-terminal 💻
+  * A terminal emulator directly within Vim. This feature empowers you to run commands, compile code, and perform other terminal-related tasks without leaving your Vim environment.
+
+Tagbar 🏷️
+  * code navigation sidebar that displays the structure of your code files.
+    
+jedi-vim 🐍
+  * enhances your Python coding experience by providing auto-completion, code analysis, and documentation pop-ups.
+
 
 ### Native Vim Key Bindings 🎮
 
@@ -186,4 +199,4 @@ The installation is not working:
 
 A special thanks to the Vim/Neovim community for their continuous support.
 
-### Happy Editing! 🪶💻🐍
+### Happy Editing! 🪶💻
