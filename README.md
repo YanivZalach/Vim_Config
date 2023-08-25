@@ -33,24 +33,40 @@ Before using this Vim configuration, make sure you have the following installed 
 ## Installation 📦
 
 1. Install the programs listed above using your package manager or download them from their respective websites.
-
-2. Open a terminal emulator
    
-3. Copy the config file, by copy and paste the following command into the terminal and press 'enter':
-
-  For Vim:
-  ```bash
-  git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
-  mv ~/Vim_Linux_Config/* ~/
-  rm -rf ~/Vim_Linux_Config
-  ```
-
-  For NeoVim:
-  ```bash
-  git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
-  mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
-  ```
-4. Install the Plugins:
+2. Copy the config file:
+   
+      ### Linux & MacOS:
+      Copy and paste the following command into the terminal and press 'enter':
+    
+      For Vim:
+      ```bash
+      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
+      mv ~/Vim_Linux_Config/* ~/
+      rm -rf ~/Vim_Linux_Config
+      ```
+    
+      For NeoVim:
+      ```bash
+      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
+      mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
+      ```
+      ### Windows:
+      Copy and paste the following command into PowerShell and press 'enter':
+    
+      For Vim:
+      ```pwsh
+      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/Vim_Linux_Config
+      mv ~/Vim_Linux_Config/* ~/
+      rm -rf ~/Vim_Linux_Config
+      ```
+    
+      For NeoVim:
+      ```pwsh
+      git clone https://github.com/YanivZalach/Vim_Linux_Config.git ~/.config/nvim
+      mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
+      ```
+3. Install the Plugins:
    
    To install the plugins, follow these steps:
    
