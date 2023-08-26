@@ -51,6 +51,9 @@
 " Smart tab
 	set smarttab
 
+" Search down to subfolders
+	set path+=**
+
 " Enable plugins and load plugin for the detected file type.
 	filetype plugin on
 
@@ -124,6 +127,14 @@
     	set undofile
     	set undoreload=10000
 	endif
+
+
+" File Browsing settings
+	let g:netrw_banner=0
+	let g:netrw_liststyle=3
+	let g:netrw_showhide=1
+	let g:netrw_winsize=20
+
 
 " Nerd tree settings
 	let g:NERDTreeDirArrowExpandable="+"
@@ -221,7 +232,7 @@
 
 
 " Opening\Creating a file in a new tab - write the tab to open
-	nnoremap <leader>c :tabnew<space>
+	nnoremap <leader>c :tabfind<space>
 
 
 " Saving a file using CTRL+S
