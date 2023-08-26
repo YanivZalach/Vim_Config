@@ -42,9 +42,7 @@ Before using this Vim configuration, make sure you have the following installed 
       For Vim:
       ```bash
       git clone https://github.com/YanivZalach/Vim_Config.git ~/Vim_Config
-      mv ~/Vim_Config/.* ~/
-      rm -rf ~/Vim_Config
-      rm -rf ~/.git
+      mv ~/Vim_Config/.vimrc  ~/.
       ```
     
       For NeoVim:
