@@ -232,7 +232,7 @@
 
 
 " Opening\Creating a file in a new tab - write the tab to open
-	nnoremap <leader>c :tabfind<space>
+	nnoremap <leader>c :tabedit<space>
 
 
 " Saving a file using CTRL+S
