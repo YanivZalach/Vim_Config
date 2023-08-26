@@ -7,7 +7,6 @@
 
 [Vim](https://www.vim.org/) / [NeoVim](https://neovim.io) is a powerful and highly configurable text editor designed to make text manipulation and coding a breeze. It's known for its unique modal editing system, where different modes offer distinct functionalities like insertion, navigation, and text manipulation. This design philosophy enables lightning-fast editing once you're familiar with the concepts.
 
-*What if i want a fast, plug and play setup? visit: https://github.com/YanivZalach/Vim_Config_NO_PLUGINS*
 
 What do we have here? My Vim configuration file! 
 
@@ -30,6 +29,7 @@ Before using this Vim configuration, make sure you have the following installed 
 - [Vim-Plug](https://github.com/junegunn/vim-plug) ⚡️ (plugin manager)
 
 
+*What if i want a fast, plug and play setup? visit: https://github.com/YanivZalach/Vim_Config_NO_PLUGINS*
 
 ## Installation 📦
 
