@@ -33,6 +33,9 @@
 " Disable compatibility with vi which can cause unexpected issues.
 	set nocompatible
 
+" Disable the vim bell
+	set visualbell
+
 " Disable auto commenting in a new line
 	autocmd Filetype * setlocal formatoptions-=c formatoptions-=r  formatoptions-=o
 
