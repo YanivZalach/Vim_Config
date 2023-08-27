@@ -220,7 +220,7 @@
 
 
 " Resize split windows using arrow keys by pressing:
-" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
+" Alt+UP, Alt+DOWN, Alt+LEFT, or Alt+RIGHT.
 	noremap <a-Up> <c-w>+
 	noremap <a-Down> <c-w>-
 	noremap <a-Left> <c-w>>
