@@ -208,8 +208,8 @@
 
 
 " You can split the window in Vim. y - in the y access , x - in the x access
-	map <leader>y :split<CR>
-	map <leader>x :vsplit<CR>
+	map <leader>y :split<space>
+	map <leader>x :vsplit<space>
 
 
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
