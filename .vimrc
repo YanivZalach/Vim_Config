@@ -221,10 +221,10 @@
 
 " Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
-	noremap <c-up> <c-w>+
-	noremap <c-down> <c-w>-
-	noremap <c-left> <c-w>>
-	noremap <c-right> <c-w><
+	noremap <a-Up> <c-w>+
+	noremap <a-Down> <c-w>-
+	noremap <a-Left> <c-w>>
+	noremap <a-Right> <c-w><
 
 
 " Moving between tabs
