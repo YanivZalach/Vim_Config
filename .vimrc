@@ -242,6 +242,8 @@
 " Quitting and saving a file using CTRL+S
 	map <C-q> :wq<CR>
 
+" Map V-Block to not confuse with Past
+	noremap <leader>v <C-v>
 
 " Opening/closing NERD tree
 	map <leader>n :NERDTreeToggle<CR>
