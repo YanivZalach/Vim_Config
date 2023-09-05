@@ -152,6 +152,7 @@ Take your editing experience to the next level with these added key bindings:
 - `Q`: Format a paragraph into lines.
 - `<Ctrl> + z`: Toggle spell check.
 - `<Space> + e`: Open a file explorer.
+- `<Space> + v`: Enter V-Block Mode
 - `<Ctrl> + t`: Toggle a terminal window.
 - `<Ctrl> + i`: Make the terminal scrollable or switch to input mode.
 - `<Space> + y`: Split window vertically.

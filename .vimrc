@@ -24,6 +24,18 @@
 
 	call plug#end()
 
+"	to do:
+"
+"		plug:
+"			:PlugClean
+"			:PlugInstall
+"
+"		nvim.coc:
+"			python->	:CocInstall coc-python
+"			python3->	:CocInstall coc-pyright
+"			cpp->	:CocInstall coc-clangd
+
+
 
 
 
