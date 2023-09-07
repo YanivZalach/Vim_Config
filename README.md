@@ -97,9 +97,9 @@ Smart Tab and Indentation Settings 💡
 Beautiful Color Scheme 🌈
   * A soothing color scheme that's easy on your eyes is set as default, enhancing your focus and readability.
   
-Basic Auto-Completion using coc.nvim 🔌
+Auto-Completion using coc.nvim 🔌
   
-  * Auto-completion courtesy of coc.nvim, which can be extended for future enhancements.
+  * Auto-completion courtesy of coc.nvim, which can be extended in the future, with enhancements and specific languages.
     
 NERD Tree Integration 🌲
   * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
@@ -111,11 +111,8 @@ Vim-devicons 🔍
   * Developer-friendly icons to different file types and directories. 
 
 Vim-terminal 💻
-  * A terminal emulator directly within Vim. This feature empowers you to run commands, compile code, and perform other terminal-related tasks without leaving your Vim environment.
+  * A terminal emulator directly within Vim. compile code, and perform other terminal-related tasks without leaving your Vim environment.
 
-
-Jedi-vim *(commented by default)* 🐍
-  * enhances your Python3 coding experience by providing auto-completion, code analysis, and documentation pop-ups.
 
 
 ### Native Vim Key Bindings 🎮
