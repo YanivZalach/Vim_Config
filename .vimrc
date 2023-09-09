@@ -139,6 +139,10 @@
 	endif
 
 
+" Status line
+	let g:airline_powerline_fonts = 1
+
+
 " File Browsing settings
 	let g:netrw_banner=0
 	let g:netrw_liststyle=3
