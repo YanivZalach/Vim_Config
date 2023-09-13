@@ -15,8 +15,9 @@
 	call plug#begin()
 
 		Plug 'https://github.com/preservim/nerdtree' " Nerd Tree
-		Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 		Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+		Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+		Plug 'tpope/vim-fugitive' " Git integration
 		Plug 'neoclide/coc.nvim', {'branch': 'release'} "for auto complete 
 
 
@@ -261,6 +262,26 @@
 
 " Opening/closing NERD tree
 	map <leader>n :NERDTreeToggle<CR>
+
+
+" Git integration
+	" Git stage all changes
+	nnoremap <leader>ga <cmd>w<CR> <cmd>G add .<CR>
+	" Git commit
+	nnoremap <leader>gc <cmd>G commit<CR>
+	" Git push current branch
+	nnoremap <leader>gp <cmd>G push<CR>
+	" Git status
+	"	Keys:
+	"		- -> stage and ustage a file
+	"		cc -> commit massage
+	nnoremap <leader>gs <cmd>G<CR>
+	" Git log
+	nnoremap <leader>gl <cmd>G log<CR>
+	" Git marge conflict: 
+	"	:Gvdiffsplit!
+	"		to chose what window we want to take: dXo - (X - left-> d2o , right-> d3o)
+
 
 " Coc Tab and Enter completion
 	" Tab key: Cycles through completion 

@@ -101,6 +101,10 @@ Auto-Completion using coc.nvim 🔌
   
   * Auto-completion courtesy of coc.nvim, which can be extended in the future, with enhancements and specific languages.
     
+Git integration using vim fugitive 🎮
+
+- Git keybindings and commends easy and fast with vim fugitive.
+
 NERD Tree Integration 🌲
   * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
   
@@ -161,6 +165,11 @@ Take your editing experience to the next level with these added key bindings:
 - `<Ctrl> + s`: Save the current file.
 - `<Ctrl> + q`: Save and quit.
 - `<Ctrl> + n`: Toggle NERD Tree.
+- `<Space> + ga`: Add changes
+- `<Space> + gc`: Commit changes.
+- `<Space> + gp`: Git push.
+- `<Space> + gs`: Git file status.
+- `<Space> + gl`: Git log.
 
 
 
