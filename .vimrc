@@ -257,6 +257,11 @@
 " Quitting and saving a file using CTRL+S
 	map <C-q> :wq<CR>
 
+
+" Replace all occurrences of a word
+	nnoremap <leader>rw :%s/\<<c-r><c-w>\>//g<left><left>
+
+
 " Map V-Block to not confuse with Past
 	noremap <leader>v <C-v>
 
