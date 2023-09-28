@@ -298,6 +298,12 @@
 	" Enter key: Accepts the selected completion
 	inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
+	" Jump to definition (X and Y for the axis, T for tab)
+	nnoremap <leader>dx <cmd>call CocAction('jumpDefinition', 'vsplit')<CR>
+	nnoremap <leader>dy <cmd>call CocAction('jumpDefinition', 'split')<CR>
+	nnoremap <leader>dt <cmd>call CocAction('jumpDefinition', 'tabe')<CR>
+
+
 
 
 " For copy and past

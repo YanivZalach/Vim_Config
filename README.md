@@ -171,6 +171,10 @@ Take your editing experience to the next level with these added key bindings:
 - `<Space> + gp`: Git push.
 - `<Space> + gs`: Git file status.
 - `<Space> + gl`: Git log.
+- `<Space> + dx`: Jump to definition, split horizontally.
+- `<Space> + dy`: Jump to definition, split vertically.
+- `<Space> + dt`: Jump to definition in a new tab.
+
 
 
 
