@@ -117,6 +117,9 @@ Vim-devicons 🔍
 Vim-terminal 💻
   * A terminal emulator directly within Vim. compile code, and perform other terminal-related tasks without leaving your Vim environment.
 
+Hebrew Mode 🚀
+
+- A mode that support right to left written languages. This feature empowers you so you can use any Language in Nvim.
 
 
 ### Native Vim Key Bindings 🎮
@@ -152,6 +155,8 @@ Take your editing experience to the next level with these added key bindings:
 - `<Space> + r`: Showing vim registers.
 - `jj`: Quickly exit insert mode.
 - `Q`: Format a paragraph into lines.
+- `J`: In visual mode, move line down.
+- `K`: In visual mode, move line up.
 - `<Ctrl> + z`: Toggle spell check.
 - `<Space> + e`: Open a file explorer.
 - `<Space> + v`: Enter V-Block Mode
