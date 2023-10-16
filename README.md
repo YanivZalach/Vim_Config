@@ -42,22 +42,22 @@ Before using this Vim configuration, make sure you have the following installed 
     
       For Vim:
       ```bash
-      git clone https://github.com/YanivZalach/Vim_Config.git ~/Vim_Config
-      mv ~/Vim_Config/.vimrc  ~/.
+      git clone https://github.com/YanivZalach/Vim_Config.git ~/.Vim_Config
+      echo "source ~/.Vim_Config/.vimrc" > ~/.vimrc
       ```
     
       For NeoVim:
       ```bash
-      git clone https://github.com/YanivZalach/Vim_Config.git ~/.config/nvim
-      mv ~/.config/nvim/.vimrc ~/.config/nvim/init.vim
+      git clone https://github.com/YanivZalach/Vim_Config.git ~/.config/nvim_git
+      echo "source ~/.config/nvim_git/init.vim" > ~/.config/nvim/init.vim
       ```
       ### Windows:
       Copy and paste the following command into PowerShell and press 'enter':
     
       For Vim:
       ```pwsh
-      git clone https://github.com/YanivZalach/Vim_Config.git $HOME\Vim_Config
-      mv $HOME\Vim_Config* $HOME
+      git clone https://github.com/YanivZalach/Vim_Config.git $HOME\.Vim_Config
+      mv $HOME\.Vim_Config* $HOME
       ```
     
       For NeoVim:
