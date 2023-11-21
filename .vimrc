@@ -178,6 +178,10 @@
     	" Hide the right-side scroll bar.
     		set guioptions-=r
 
+		" Opening Netrw on the side
+			autocmd VimEnter * Lex
+
+
 	endif
 
 
