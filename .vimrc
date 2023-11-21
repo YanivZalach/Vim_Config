@@ -164,10 +164,10 @@
     		color slate
 
 		" Font
-			if has("gui_macvim")
+			if has("macvim")
     			set guifont=Menlo\ Regular:h14
-			elseif has("gui_win32")
-				set guifont="Consolas 11"
+			elseif has("win32")
+				set guifont="Consolas 14"
 			else
 				set guifont=Consolas\ 14
 			endif
@@ -179,7 +179,7 @@
     		set guioptions-=r
 
 		" Opening Netrw on the side
-			autocmd VimEnter * Lex
+			autocmd VimEnter * Lex | wincmd p
 
 
 	endif
