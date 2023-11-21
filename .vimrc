@@ -14,8 +14,6 @@
 
 	call plug#begin()
 
-		Plug 'https://github.com/preservim/nerdtree' " Nerd Tree
-		Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 		Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 		Plug 'tpope/vim-fugitive' " Git integration
 		Plug 'neoclide/coc.nvim', {'branch': 'release'} "for auto complete 
@@ -140,7 +138,7 @@
 	endif
 
 " Closing compaction in insert mode
-	inoremap " ""<left>
+	inoremap [ []<left>
 	inoremap ( ()<left>
 	inoremap { {}<left>
 	inoremap /* /**/<left><left>
@@ -151,22 +149,11 @@
 
 
 " File Browsing settings
-	let g:netrw_banner=0
+	let g:netrw_banner=1
 	let g:netrw_liststyle=3
 	let g:netrw_showhide=1
 	let g:netrw_winsize=20
 
-
-" Nerd tree settings
-	let g:NERDTreeDirArrowExpandable="+"
-	let g:NERDTreeDirArrowCollapsible="~"
-	let g:NERDTreeShowHidden=1
-	let g:NERDTreeWinSize = 20
-
-
-
-" Exit Vim if NERD Tree is the only window remaining in the only tab.
-	autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 "------------------GVIM - GUI VERSION------------------
 
@@ -190,9 +177,6 @@
 
     	" Hide the right-side scroll bar.
     		set guioptions-=r
-
-		" Start NERD Tree and put the cursor back in the other window.
-			autocmd VimEnter * NERDTree | wincmd p
 
 	endif
 
@@ -234,9 +218,11 @@ endfunction
 	let mapleader = " "
 
 
-" Opening a file explore - stay as only window unlike NERD tree
+" Opening a file explore
 	map <leader>e :Lex<CR>
 
+" Opening a file from file explore
+	map <leader>o :Explore<CR>
 
 " Opening a terminal window
 	map <c-t> :ter<CR>
@@ -292,9 +278,6 @@ endfunction
 
 " Map V-Block to not confuse with Past
 	noremap <leader>v <C-v>
-
-" Opening/closing NERD tree
-	map <leader>n :NERDTreeToggle<CR>
 
 
 " Git integration

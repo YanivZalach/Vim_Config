@@ -105,8 +105,8 @@ Git integration using vim fugitive 🎮
 
 - Git keybindings and commends easy and fast with vim fugitive.
 
-NERD Tree Integration 🌲
-  * Navigate through your project effortlessly with NERD Tree, your trusty sidekick for efficient file exploration.
+Netrw 🌲
+  * Navigate through your project effortlessly with Netrw, your trusty sidekick for efficient file exploration.
   
 Vim-airline ✈️
   * a sleek and customizable status bar for Vim, located at the bottom of your editor.
@@ -159,6 +159,7 @@ Take your editing experience to the next level with these added key bindings:
 - `K`: In visual mode, move line up.
 - `<Ctrl> + z`: Toggle spell check.
 - `<Space> + e`: Open a file explorer.
+- `<Space> + o`: Open file from file explorer.
 - `<Space> + v`: Enter V-Block Mode
 - `<Ctrl> + t`: Toggle a terminal window.
 - `<Ctrl> + i`: Make the terminal scrollable or switch to input mode.
@@ -173,7 +174,6 @@ Take your editing experience to the next level with these added key bindings:
 - `<Space> + sw`: Surround word with a wanted character.
 - `<Space> + rw`: Replace all occurrences of a word.
 - `<Space + ht`: toggle `Hebrew` mode.
-- `<Ctrl> + n`: Toggle NERD Tree.
 - `<Space> + ga`: Add changes
 - `<Space> + gc`: Commit changes.
 - `<Space> + gp`: Git push.
