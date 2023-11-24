@@ -152,8 +152,9 @@ Take your editing experience to the next level with these added key bindings:
 
 - `<Ctrl> + c`: Copy text to the main clipboard in normal mode.
 - `<Ctrl> + <Shift> + v`: Paste text from the main clipboard.
-- `<Space> + r`: Showing vim registers.
 - `jj`: Quickly exit insert mode.
+- `<Space> + r`: Showing vim registers.
+- `<Space> + sc`: Source the vim config.
 - `Q`: Format a paragraph into lines.
 - `J`: In visual mode, move line down.
 - `K`: In visual mode, move line up.
@@ -179,12 +180,12 @@ Take your editing experience to the next level with these added key bindings:
 - `<Space> + gp`: Git push.
 - `<Space> + gs`: Git file status.
 - `<Space> + gl`: Git log.
+- `<Space> + rr`: Code Runner.
 - `<Space> + dx`: Jump to definition, split horizontally.
 - `<Space> + dy`: Jump to definition, split vertically.
 - `<Space> + dt`: Jump to definition in a new tab.
-
-
-
+- `<Space> + ci`: Organizing the imports.
+- `<Space> + cf`: Doing quickfix.
 
 ## Troubleshooting 🔧
 

@@ -257,6 +257,27 @@ endfunction
 
 "------------------KEY_BINDINGS------------------
 
+" Set the space  as the leader key.
+	let mapleader = " "
+
+
+" ---Code_runner--- ( Leader + rr)
+		" Markdown
+		autocmd Filetype markdown nnoremap <leader>rr <cmd>!echo \n\n\n"Compiling to pdf..."\n && pandoc -f markdown-implicit_figures --highlight-style=tango -t pdf % -o %:r.pdf && zathura %:r.pdf &<CR>
+		" Python
+		autocmd FileType python nnoremap <leader>rr <cmd>!echo \n\n\n"Output:"\n && python3 %<CR>
+		" JavaScript with Node.js
+		autocmd FileType javascript nnoremap <leader>rr <cmd>!echo \n\n\n"Output:"\n && node %<CR>
+		" HTML in default browser
+		autocmd FileType html nnoremap <leader>rr <cmd>!echo \n\n\n"Opening:"\n && open % &<CR>
+		" C
+		autocmd FileType c nnoremap <leader>rr <cmd>!echo \n\n\n"Compiling:"\n && gcc % -o %:r && echo \n\n\n"Success"\n"The Output:"\n\n && %:p:r<CR>
+		" C++
+		autocmd FileType cpp nnoremap <leader>rr <cmd>!echo \n\n\n"Compiling:"\n && g++ % -o %:r -pthread -std=c++17 && echo \n\n\n"Success"\n"The Output:"\n\n && %:p:r<CR>
+		" Rust
+		autocmd FileType rust nnoremap <leader>rr <cmd>!echo \n\n\n"Compiling:"\n && cargo run<CR>
+		" LaTeX
+		autocmd FileType tex nnoremap <leader>rr <cmd>!echo \n\n\n"Compiling:"\n && xelatex %<CR>
 
 " Spell-check on\off
 	map <C-z> :setlocal spell! spelllang=en_us<CR>
@@ -265,14 +286,11 @@ endfunction
 " Type jj to exit insert mode quickly.
 	inoremap jj <Esc>
 
+" Source the vim config
+	nnoremap <leader>sc <cmd>source $MYVIMRC<CR>
 
 " Format a paragraph into lines
 	map Q gq<CR>
-
-
-" Set the space  as the leader key.
-	let mapleader = " "
-
 
 " Opening a file explore
 	map <leader>e :Lex<CR>
@@ -375,6 +393,11 @@ endfunction
 	nnoremap <leader>dx <cmd>call CocAction('jumpDefinition', 'vsplit')<CR>
 	nnoremap <leader>dy <cmd>call CocAction('jumpDefinition', 'split')<CR>
 	nnoremap <leader>dt <cmd>call CocAction('jumpDefinition', 'tabe')<CR>
+
+	" Organizing imports
+	nnoremap <leader>ci <cmd>call CocAction('organizeImport')<CR>
+	" Quick fix
+	nnoremap <leader>cf <cmd>call CocAction('doQuickfix')<CR>
 
 
 " For copy and past
