@@ -155,6 +155,7 @@ Take your editing experience to the next level with these added key bindings:
 - `jj`: Quickly exit insert mode.
 - `<Space> + r`: Showing vim registers.
 - `<Space> + sc`: Source the vim config.
+- `<Space> + a`: Select all the text in the document.
 - `Q`: Format a paragraph into lines.
 - `J`: In visual mode, move line down.
 - `K`: In visual mode, move line up.

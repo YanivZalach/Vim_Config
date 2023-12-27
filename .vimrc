@@ -292,6 +292,9 @@ endfunction
 " Format a paragraph into lines
 	map Q gq<CR>
 
+	" Select all the text
+	nnoremap <leader>a ggVG
+
 " Opening a file explore
 	map <leader>e :Lex<CR>
 
