@@ -337,12 +337,12 @@ endfunction
 	nnoremap <leader>c :tabedit<space>
 
 
-" Saving a file using CTRL+S
-	map <C-S> :w<CR>
+" Saving all file using CTRL+S
+	map <C-S> :wa<CR>
 
 
-" Quitting and saving a file using CTRL+S
-	map <C-q> :wq<CR>
+" Quitting and saving all file using CTRL+S
+	map <C-q> :wqa<CR>
 
 
 " Replace all occurrences of a word
