@@ -418,6 +418,18 @@ endfunction
 	vnoremap J :m '>+1<CR>gv=gv
 	vnoremap K :m '>-2<CR>gv=gv
 
+" Mini-Harpoon
+	" Adding Location to min-harpoon
+	nnoremap <leader>ha :SaveLocation<CR>
+	" Going to location by index (start from 1 - easer with the keyboard)
+	nnoremap <leader>hg :GoToLocation<space>
+	"Opening the file list
+	nnoremap <leader>hj :OpenLocationFile<CR>
+	" Going to specific location
+	nnoremap <leader>h1 :GoToLocation 1<CR>
+	nnoremap <leader>h2 :GoToLocation 2<CR>
+	nnoremap <leader>h3 :GoToLocation 3<CR>
+	nnoremap <leader>h4 :GoToLocation 4<CR>
 
 "------------------END_KEY------------------
 
