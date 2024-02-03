@@ -17,6 +17,7 @@
 		Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 		Plug 'tpope/vim-fugitive' " Git integration
 		Plug 'neoclide/coc.nvim', {'branch': 'release'} "for auto complete 
+		Plug 'YanivZalach/mini-harpoon' " Adding VIM file Navigate
 
 
 	call plug#end()
