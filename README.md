@@ -91,6 +91,9 @@ Before using this Vim configuration, make sure you have the following installed 
 ## Usage, Features, and Special Key Bindings 🚀
 ### Welcome to Your Enhanced Vim Experience!
 
+[Mini-Harpoon](https://github.com/YanivZalach/mini-harpoon) 🔌
+  * Experience seamless navigation using the mini-Harpoon plugin. Mini-Harpoon helps you jump fast between files! (My own plugin).
+
 Smart Tab and Indentation Settings 💡
   * Experience seamless and intelligent code indentation for a consistent coding journey.
 
@@ -187,6 +190,10 @@ Take your editing experience to the next level with these added key bindings:
 - `<Space> + dt`: Jump to definition in a new tab.
 - `<Space> + ci`: Organizing the imports.
 - `<Space> + cf`: Doing quickfix.
+- `<Space> + hj`: Open Mini-Harpoon.
+- `<Space> + ha`: Add file to Mini-Harpoon.
+- `<Space> + hg`: Open wonted file from Mini-Harpoon.
+- `<Space> + h 1-4`: The first 4 files in Harpoon.
 
 ## Troubleshooting 🔧
 
