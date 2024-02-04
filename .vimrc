@@ -404,8 +404,8 @@ endfunction
 	nnoremap <leader>cf <cmd>call CocAction('doQuickfix')<CR>
 
 
-" For copy and past
-	map <C-S-V> "+P
+" For copy and paste
+	map <C-V> "+P
 	vnoremap <C-C> "*y :let @+=@*<CR>
 " If not in Linux replace the keybinding in above line with: vnoremap <C-C> "+y
 

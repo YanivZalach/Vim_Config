@@ -154,7 +154,7 @@ Remember, Vim's unique modal nature means that you often need to switch to Norma
 Take your editing experience to the next level with these added key bindings:
 
 - `<Ctrl> + c`: Copy text to the main clipboard in normal mode.
-- `<Ctrl> + <Shift> + v`: Paste text from the main clipboard.
+- `<Ctrl> + v`: Paste text from the main clipboard.
 - `jj`: Quickly exit insert mode.
 - `<Space> + r`: Showing vim registers.
 - `<Space> + sc`: Source the vim config.
